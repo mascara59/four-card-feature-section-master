@@ -1,0 +1,154 @@
+:root {
+
+    --clr-Red: hsl(0, 78%, 62%);
+    --clr-Cyan: hsl(180, 62%, 55%);
+    --clr-Orange: hsl(34, 97%, 64%);
+    --clr-Blue: hsl(212, 86%, 64%);
+
+    --clr-Grey-500: hsl(234, 12%, 34%);
+    --clr-Grey-400: hsl(212, 6%, 44%);
+    --clr-White: hsl(0, 0%, 100%);
+
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--clr-Grey-400);
+    font-family: "Poppins", sans-serif;
+}
+
+/* text styles */
+
+.content {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.second-title {
+    font-size: 35px;
+    font-weight: 200;
+    margin-top: 5rem;
+    color: var(--clr-Grey-500);
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--clr-Grey-500);
+}
+
+.description {
+    font-size: 15px;
+    margin: .75rem auto;
+    width: 500px;
+    color: var(--clr-Grey-500);
+}
+
+.supe {
+    color: var(--clr-Grey-500);
+    font-weight: 600;
+}
+
+.text {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: var(--clr-Grey-500);
+}
+
+.card-description {
+    width: 300px;
+    margin-bottom: 1.75rem;
+}
+
+/* layout styles */
+
+.wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.section {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 365px;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 2px 8px 14px 0 hsl(229, 6%, 66%);
+}
+
+.col-2 {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.icon-container {
+    padding: .5rem 0;
+    display: flex;
+    justify-content: end;
+}
+
+.box-1 {
+    border-top: 5px solid var(--clr-Cyan);
+}
+
+.box-2 {
+    border-top: 5px solid var(--clr-Red);
+}
+
+.box-2:last-child {
+    border-top: 5px solid var(--clr-Orange);
+}
+
+.box-3 {
+    border-top: 5px solid var(--clr-Blue);
+}
+
+/* media query */
+
+@media (max-width: 600px) {
+
+    .wrapper-container {
+        width: 375px;
+    }
+
+    .content {
+        padding: 0 .5rem;
+        margin: 2rem 0;
+    }
+
+    .second-title {
+        margin-top: 2.5rem;
+        font-size: 1.8rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        width: auto;
+    }
+
+    .section {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
