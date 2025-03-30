@@ -24,6 +24,7 @@ body {
     font-weight: 400;
     color: var(--clr-Grey-400);
     font-family: "Poppins", sans-serif;
+    background-color: #ededed;
 }
 
 /* text styles */
@@ -88,7 +89,8 @@ body {
     width: 365px;
     padding: 2rem;
     border-radius: .5rem;
-    box-shadow: 2px 8px 14px 0 hsl(229, 6%, 66%);
+    background-color: #fff;
+    box-shadow: 2px 5px 5px 2px #cfd9e4;
 }
 
 .col-2 {
